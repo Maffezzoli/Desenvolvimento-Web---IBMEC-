@@ -1,0 +1,14 @@
+1. Python - https://www.python.org/
+    Python pode ser usada para a construção de websites, com o auxilio  
+    de alguns frameworks como o Django.
+2. Git - https://git-scm.com/
+    Git é usado para versionamento de código, muito importante no 
+    desenvolvimento de qualquer projeto.
+3. VsCode - https://code.visualstudio.com/
+    É um editor de código muito popular, editores de código são essenciais
+    pois ao contrario de simples editores de textos, esses, possuem diversos
+    suportes úteis à produção de código.
+4. SqLite - https://sqlitebrowser.org/
+    É um gerenciador de banco de dados, gerenciadores de bancos de dados
+    são indispensáveis para qualquer website que tenha que se comunicar 
+    com o usuário.
