@@ -4,14 +4,24 @@
     <meta charset="utf-8">
     <title>Trabalho Semana 2</title>">
 </head>
+<style>
+    .piscando {
+        animation: blinker 2s linear infinite;
+    }
 
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
 <body style="background-color: rgb(100, 100, 122);">
 
 <h1 class="titulo" style="text-align: center; color: aliceblue;">
     Trabalho Semana 2
 </h1>
 
-<p style="text-align: center; color: rgb(0, 255, 85);">
+<p class="piscando" style="text-align: center; color: rgb(0, 255, 85);">
     Server 2!
 </p>
 </body>

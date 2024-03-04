@@ -4,7 +4,7 @@ function botao(){
     var aleatorio = imgs[Math.floor(Math.random()*imgs.length)]
     var imgAtual = imagem.src
     do{
-        aleatorio = "C:/Users/202308507702/Trabalhos/primeiro_trabalho/static/" + imgs[Math.floor(Math.random()*imgs.length)]
+        aleatorio = "C:/Users/202308507702/desenvolvimento-web---ibmec-/primeiro_trabalho/static/" + imgs[Math.floor(Math.random()*imgs.length)]
     }
     while(aleatorio == imgAtual)
     imagem.src = aleatorio
