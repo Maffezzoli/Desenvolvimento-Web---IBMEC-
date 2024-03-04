@@ -1,4 +1,3 @@
-Desenvolvimento Web - 2 Período - Daniel Maffezzoli
 1. Python - https://www.python.org/
     Python pode ser usada para a construção de websites, com o auxilio  
     de alguns frameworks como o Django.
