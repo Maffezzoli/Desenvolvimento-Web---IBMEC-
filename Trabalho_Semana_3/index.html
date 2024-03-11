@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semana3.css">
+    <title>Login</title>
+</head>
+<body style="background-color: black;">
+    <div class="forms" style="text-align: center;">
+        <form action="form.js" id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>   
+    </div>
+    <div class="login_container">
+        <img class="login_fundo" src="fundo_login.jpg">
+    </div>
+    <script src="form.js"></script>
+    <script>
+        // Obtém o formulário pelo ID
+        var form = document.getElementById("loginForm");
+
+        // Adiciona um listener de evento para o evento "submit" do formulário
+        form.addEventListener("submit", get());
+    </script>
+</body>
+</html>

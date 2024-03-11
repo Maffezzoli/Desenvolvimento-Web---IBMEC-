@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="semana3.css">
     <title>Trabalho Semana 3</title>
 </head>
-<body style="font-family:Georgia, 'Times New Roman', Times, serif">
+<body style="font-family:Georgia, 'Times New Roman', Times, serif; background-color: bisque;">
+    <audio id="myAudio">
+        <source src="click.mp3" type="audio/mpeg">
+    </audio>
   <div class="Container">
     <div class="Lista">
         <p style="text-align: center; font-size: larger;"> <span style="color: brown;">Agenda</span> diária:</p>
@@ -26,9 +29,14 @@
             <h4 style="color: cadetblue;">.</h4>
             <h5 style="color: azure;">.</h5>
             <h6 style="color: blueviolet;">.</h6>
-        </div>
     </div>
-  </div>
+    <div class="voltar">
+        <a href="index.html" style="text-decoration: none;">Log-Out</a>
+    </div>
+    <div class="repositorio">
+        <a href="https://github.com/Maffezzoli/Desenvolvimento-Web---IBMEC-" style="text-decoration: none;">Repositório GitHub</a>
+    </div>
+  
   <div class="Container2">
     <div class="Lista2">
         <p style="text-align: center; font-size: larger;"> <span style="color: rgb(81, 148, 68);">Gastos</span> diários:</p>
@@ -42,9 +50,42 @@
             <li>Cursos Online</li>
             <li>Material</li>
         </menu>
-        </div>
     </div>
   </div>
+   <div class="baixar">
+            <form id="myForm">
+            <div style="text-align: center;">
+                <label for="content"><strong>Escreva algo =]</strong></label>
+            </div>>
+            <div style="text-align: center; padding-top: 10px;">
+                <textarea  id="content" name="content" rows="3" cols="40"></textarea><br><br>
+            </div>
+            <div style="text-align: center;">
+                <input style="border-radius: 10px; background-color: rgb(160, 160, 126);"  type="submit" value="Baixar">
+            </div>
+        </form> 
+   </div>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+            event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+            
+            var content = document.getElementById("content").value;
+            var blob = new Blob([content], { type: "text/plain" }); // Cria um blob de texto
+            
+            var url = URL.createObjectURL(blob); // Cria uma URL para o blob
+            
+            var a = document.createElement("a"); // Cria um elemento <a> para baixar o arquivo
+            a.href = url;
+            a.download = "dados.txt"; // Define o nome do arquivo a ser baixado
+            document.body.appendChild(a); // Adiciona o elemento <a> ao corpo do documento
+            
+            a.click(); // Simula um clique no link para iniciar o download
+            
+            URL.revokeObjectURL(url); // Libera a URL do blob
+        });
+    </script>
   <img class="img" src="fundo.jpg">
 </body>
 </html>
