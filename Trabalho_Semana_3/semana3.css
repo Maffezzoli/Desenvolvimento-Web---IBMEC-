@@ -1,0 +1,32 @@
+.Lista{
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(197, 191, 138);
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    border-radius: 10px;
+}
+.Lista2{
+    width: 400px;
+    height: 309px;
+    padding: 10px;
+    background-color: rgb(197, 191, 138);
+    position: absolute;
+    left: 750px;
+    top: 150px;
+    border-radius: 10px;
+}
+.Container2{
+    position: relative;
+}
+.Container{
+    position: relative;
+}
+.img{
+    width: 1300px;
+    height: 630px;
+}
+h1, h2, h3, h4, h5 ,h6{
+    display: inline-block;
+}
