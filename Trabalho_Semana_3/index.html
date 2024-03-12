@@ -7,7 +7,9 @@
     <title>Login</title>
 </head>
 <body style="background-color: black;">
-    <div class="forms" style="text-align: center;">
+    <div id="forms" style="text-align: center;">
+        <p hidden id="paragrafo-escondido"><em>Parágrafo <del>escondido</del> <ins>inserido</ins>
+            <br>usuário: user<br>senha: password</em></p>
         <form action="form.js" id="loginForm">
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username"><br><br>
@@ -15,9 +17,18 @@
             <input type="password" id="password" name="password"><br><br>
             <input type="submit" value="Login">
         </form>   
+        <button onclick="mostrarParagrafo()" style="width: 100px; height: 20px;">clique</button>
     </div>
-    <div class="login_container">
-        <img class="login_fundo" src="fundo_login.jpg">
+    <div id="login_container">
+        <img id="login_fundo" src="fundo_login.jpg">
+    </div>
+    <div title="vector aeee" id="video">
+        <iframe width="460" height="215" src="https://www.youtube.com/embed/CXZlO6gwTSA?si=dGBlBebiVdz-Milf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div title="cachorro dançando" id="video_2">
+        <video width="200" height="200" controls>
+            <source src="lobo_dancando.mp4" type="video/mp4">
+        </video>
     </div>
     <script src="form.js"></script>
     <script>
@@ -26,6 +37,22 @@
 
         // Adiciona um listener de evento para o evento "submit" do formulário
         form.addEventListener("submit", get());
+    </script>
+    <script>
+        function mostrarParagrafo() {
+            var paragrafo = document.getElementById("paragrafo-escondido");
+            if (paragrafo.hasAttribute("hidden")){
+                paragrafo.removeAttribute("hidden");
+                var muda_css = document.getElementById("forms");
+                muda_css.style.height = "240px"
+            }
+            else{
+                paragrafo.toggleAttribute("hidden")
+                var muda_css = document.getElementById("forms");
+                muda_css.style.height = "140px"
+            }
+                
+        }
     </script>
 </body>
 </html>
