@@ -1,5 +1,3 @@
-Claro, aqui estão as respostas em formato Markdown:
-
 1) **Vantagens da utilização de sistemas de versionamento de código:** Controle de versões e recuperação de versões anteriores.
 2) **Diferença entre git e GitHub:** Git é um sistema de controle de versão distribuído; GitHub é uma plataforma de hospedagem de repositórios Git na nuvem.
 3) **Principais linguagens para web:** HTML (estrutura), CSS (estilo) e JavaScript (interatividade).
