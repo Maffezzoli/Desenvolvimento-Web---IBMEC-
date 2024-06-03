@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-y: hidden;
+}
+body{
+    height: 100vh;
+    background-color: black;
+}
+main{  
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#btn{
+    position: relative;
+    margin: 0 auto;
+    bottom: 80px;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    margin: auto 50px;
+}
+.infos p{
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 18px;
+}
+.img-container{
+    margin: 50px 50px;
+}
+.box-img p{
+    text-align:left;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
