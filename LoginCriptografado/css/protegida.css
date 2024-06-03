@@ -113,7 +113,7 @@ section button{
     color: wheat;
     text-align: center;
     flex-direction: column;
-    width: 20%;
+    width: 18rem;
     height: 410px;
     border-radius: 10px;
     cursor: pointer;
